@@ -24,7 +24,7 @@ function  waitForTranslateResult(waitSeconds = 15) {
 function checkIfReady() {
     if (document.querySelector("textarea[id=\"tta_output_ta\"]") !== null) {
         const text = document.querySelector("textarea[id=\"tta_output_ta\"]").value
-        if (text != "" && !text.includes("[...]")) {
+        if (text != "" && !text.includes("...")) {
             return true
         }
     }
